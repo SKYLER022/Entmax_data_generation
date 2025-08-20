@@ -16,6 +16,8 @@ This Python pipeline automates downloading crystal structures from the Materials
 
 - Merge filtered structures into a single file: `all_clustered_atoms.extxyz`.
 
+- Easy to use for further ML training usage.
+
 ## 🛠️ Installation
 
 ```
@@ -29,7 +31,7 @@ pip install "mp-api>=0.45" "emmet-core>=0.45" pymatgen tqdm torch ase mattersim 
 export MP_API_KEY="YOUR_MP_KEY"
 ```
 ## Usage
-
+`cd Entmax_data_generation/work` 
 `python main.py`
 
 For test use: `python test.py`
@@ -60,6 +62,18 @@ Fe,F (Enter)
 
 ## Output
 
+In `/data` folder, there are `mp-*/` and `all_clustered_atoms.extxyz` .
+
+The `/data` folder contains:
+
+- `mp-*/` — subfolders for each material, named by their Materials Project ID. Each subfolder may include:
+  - `POSCAR` — original structure file downloaded from Materials Project.
+  - `POSCAR_super` — supercell structure generated if the original has fewer than 32 atoms.
+  - `opt.traj` — trajectories generated via the Entropy Maximization (EntMax) method.
+  - `atoms_fingerprints.pkl` — precomputed fingerprints for all structures in the folder.
+  - `clustered_atoms.extxyz` — representative structures selected after fingerprint-based clustering.
+  - `cluster.png` — 3D projection (via PCA) of the clustered structures for one material.
+- `all_clustered_atoms.extxyz` — merged representative structures from all `mp-*` folders, for convenient use in further calculations or analysis.
 
 
 
