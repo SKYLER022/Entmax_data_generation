@@ -21,6 +21,14 @@ This Python pipeline automates downloading crystal structures from the Materials
 ```
 git clone https://github.com/SKYLER022/Entmax_data_generation.git
 ```
+## Dependence
+
+```
+python=3.11
+pip install "mp-api>=0.45" "emmet-core>=0.45" pymatgen tqdm torch ase mattersim libfp scikit-learn-extra "numpy<2"
+export MP_API_KEY="YOUR_MP_KEY"
+```
+
 
 
 
