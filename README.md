@@ -20,10 +20,6 @@ This Python pipeline automates downloading crystal structures from the Materials
 
 ```
 git clone https://github.com/SKYLER022/Entmax_data_generation.git
-conda create -n mp_env python=3.11
-conda activate mp_env
-cd Entmax_data_generation/work
-python main.py
 ```
 
 
