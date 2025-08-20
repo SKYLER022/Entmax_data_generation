@@ -31,7 +31,7 @@ pip install "mp-api>=0.45" "emmet-core>=0.45" pymatgen tqdm torch ase mattersim 
 export MP_API_KEY="YOUR_MP_KEY"
 ```
 ## Usage
-`cd Entmax_data_generation/work` 
+`cd Entmax_data_generation/src` 
 `python main.py`
 
 For test use: `python test.py`
@@ -62,7 +62,7 @@ Fe,F (Enter)
 
 ## Output
 
-In `/data` folder, there are `mp-*/` and `all_clustered_atoms.extxyz` .
+In output `/data` folder, there are `mp-*/` and `all_clustered_atoms.extxyz` .
 
 The `/data` folder contains:
 
