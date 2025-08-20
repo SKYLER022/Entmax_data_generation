@@ -38,7 +38,11 @@ You will see
 Enter elements to search (comma-separated, e.g., C,H,O):
 Enter number of elements to restrict (or press Enter for no restriction):
 ```
-For example, we can type:  Fe,F (Enter) 2(Enter)
+For example, we can type:  
+```
+Fe,F (Enter)
+2(Enter)
+```
 
 
 
