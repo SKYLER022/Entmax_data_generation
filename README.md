@@ -31,6 +31,7 @@ export MP_API_KEY="YOUR_MP_KEY"
 ## Usage
 
 `python main.py`
+
 For test use: `python test.py`
 
 You will see
@@ -44,7 +45,9 @@ Fe,F (Enter)
 2(Enter)
 ```
 
-
+- You can control the size of the generated dataset by adjusting the parameters in `main.py`:
+  - `n_structs=5000` — number of structures generated per material in each `mp-*` folder using the entropy maximization (EntMax) method.
+  - `n_select=200` — number of representative structures selected per material after clustering and fingerprint filtering.
 
 
 
