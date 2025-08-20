@@ -14,5 +14,5 @@ This Python pipeline automates downloading crystal structures from the Materials
 
 --Clustering & filtering: select representative structures using fingerprint similarity.
 
---Merge filtered structures into a single file: all_clustered_atoms.extxyz.
+--Merge filtered structures into a single file: 'all_clustered_atoms.extxyz'.
 
