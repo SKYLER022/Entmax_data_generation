@@ -50,13 +50,13 @@ Fe,F (Enter)
   - `n_select=200` — number of representative structures selected per material after clustering and fingerprint filtering.
 
 ### What it does
-Prompts for elements and number of elements.
-Downloads structures from Materials Project into `data/`.
-Builds supercells for structures with less than 32 atoms.
-Generates perturbed structures using entropy maximization.
-Computes fingerprints for all structures.
-Performs clustering to select representative structures.
-Merges clustered structures into `all_clustered_atoms.extxyz`.
+- Prompts for elements and number of elements.
+- Downloads structures from Materials Project into `data/`.
+- Builds supercells for structures with less than 32 atoms.
+- Generates perturbed structures using entropy maximization.
+- Computes fingerprints for all structures.
+- Performs clustering to select representative structures.
+- Merges clustered structures into `all_clustered_atoms.extxyz`.
 
 ## Output
 
