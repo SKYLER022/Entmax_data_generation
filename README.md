@@ -28,6 +28,29 @@ python=3.11
 pip install "mp-api>=0.45" "emmet-core>=0.45" pymatgen tqdm torch ase mattersim libfp scikit-learn-extra "numpy<2"
 export MP_API_KEY="YOUR_MP_KEY"
 ```
+## Folder structure
+
+work/
+│
+├─ data/                     
+│   ├─ mp-XXXXX/
+│   │   ├─ POSCAR
+│   │   ├─ POSCAR_super
+│   │   ├─ opt.traj
+│   │   ├─ atoms_fingerprints.pkl
+│   │   └─ clustered_atoms.extxyz
+│   └─ ...
+├─ pipeline/                 
+│   ├─ download.py
+│   ├─ supercell.py
+│   ├─ entmax.py
+│   ├─ fingerprint.py
+│   ├─ cluster.py
+│   └─ merge.py
+├─ main.py
+├─ test.py
+└─ README.md
+
 
 
 
