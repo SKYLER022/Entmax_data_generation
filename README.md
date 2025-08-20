@@ -2,7 +2,7 @@
 
 This Python pipeline automates downloading crystal structures from the Materials Project, expanding small structures, generating configurations via entropy maximization, computing fingerprints, clustering structures, and merging filtered results.
 
-✨ Features
+## ✨ Features
 
 --Download structures from Materials Project based on element types and number of elements.
 
